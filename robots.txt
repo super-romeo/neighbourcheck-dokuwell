@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neighbourcheck.dokuwell.com/sitemap.xml
