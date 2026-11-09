@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For home buyers and buyer&#x27;s agents in Australia: the addresses next to a property checked against public housing registers, before an offer.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,37 +77,151 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Neighbour Check</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="nc-house" viewBox="0 0 16 16"><path d="M2.5 7.6 8 3l5.5 4.6V13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" fill="none" stroke="#3d4247" stroke-width="1.4" stroke-linejoin="round"/><path d="M6.5 13.5V10h3v3.5" fill="none" stroke="#3d4247" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="nc-header"><div class="wrap">
+  <div class="logo nc-logo"><a href="index.html" data-ev="click_logo_home"><svg class="nc-mark" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="7" fill="#14171a"/><path d="M5 13.5 9 10l4 3.5V19H5z" fill="#7fd1b5"/><path d="M13 13.5 17 10l4 3.5V19h-8z" fill="none" stroke="#fbfaf6" stroke-width="1.5" stroke-linejoin="round"/></svg>Neighbour Check</a></div>
+  <nav class="top nc-nav" aria-label="Main"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a class="nc-nav__cta" href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Know who owns the houses next door before you make an offer</h1>
-    <p class="sub">For home buyers and buyer's agents in Australia: give us the address, and we check the neighbouring addresses against public records and send a report — public, community, private or unknown for each, with the source.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main>
+  <section class="nc-hero" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="grid12">
+      <div class="nc-hero__text">
+        <h1 id="hero-h">Know who owns the houses next door before you make an offer</h1>
+        <p class="nc-lead">For home buyers and buyer's agents in Australia: give us the address, and we check the neighbouring addresses against public records and send a report — public, community, private or unknown for each, with the source.</p>
+        <div class="nc-hero__actions">
+          <a class="nc-btn" href="price.html" data-ev="cta_click">I need this check<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M5.5 2.5 9 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="nc-note">Service in preparation · No payment is accepted on this page</p>
+        </div>
+        <p class="nc-proof"><span><b>Usually within 24 hours</b></span><span>Checked by a person</span><span>Every result with its source</span></p>
+      </div>
 
-  <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Neighbouring addresses</b><span>The addresses around the property that matter for the purchase.</span><br><a class="btn" href="price.html" data-ev="feature_addresses">I need this</a></div>
-      <div class="card"><b>Desk check</b><span>Each address checked against public records available online.</span><br><a class="btn" href="price.html" data-ev="feature_check">I need this</a></div>
-      <div class="card"><b>Report with sources</b><span>Public, community, private or unknown for each address, with the source.</span><br><a class="btn" href="price.html" data-ev="feature_report">I need this</a></div>
-      <div class="card"><b>Before your offer</b><span>Results usually within 24 hours.</span><br><a class="btn" href="price.html" data-ev="feature_fast">I need this</a></div>
+      <div class="nc-art" role="img" aria-label="A Neighbour Check report: the addresses around a house, each marked private, community or unknown with its source">
+        <div class="nc-win" aria-hidden="true">
+          <div class="nc-win__bar"><span class="nc-win__dots"><i></i><i></i><i></i></span><span>Neighbour Check · Report, Wattle Street, Brunswick</span></div>
+          <div class="nc-win__body">
+            <div class="nc-side">
+              <span class="is-on"><i></i>Neighbours</span><span><i></i>Sources</span><span><i></i>Notes</span><span><i></i>Send to client</span>
+              <span class="nc-side__label">Shortlist</span><span><i></i>Wattle Street</span><span><i></i>Banksia Lane</span>
+            </div>
+            <div class="nc-main">
+              <div class="nc-main__head"><div><div class="nc-main__title">Neighbouring addresses</div><div class="nc-main__sub">Checked against public records</div></div><span class="nc-tag">Report ready</span></div>
+              <div class="nc-tabs"><span class="is-on">All</span><span>Private</span><span>Community</span><span>Unknown</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Left side, Wattle Street</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Right side, Wattle Street</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Across the street</b><small>Housing provider list</small></div><span class="nc-chip nc-chip--community">Community</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Behind the back fence</b><small>No clear record</small></div><span class="nc-chip nc-chip--unknown">Unknown</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Two doors down</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Across, to the left</b><small>State housing register</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+              <div class="nc-row"><span class="nc-house"><svg><use href="#nc-house"/></svg></span><div><b>Across, to the right</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="nc-card-float" aria-hidden="true">
+          <div class="nc-card-float__head"><span>Report for your client</span><span class="nc-chip nc-sent">Sent</span></div>
+          <div class="nc-line"><i>✓</i><span><b>Neighbours</b> checked by a person</span></div>
+          <div class="nc-line"><i>✓</i><span>Every result <b>with its source</b></span></div>
+          <div class="nc-line"><i>✓</i><span>Sent by email, <b>before the offer</b></span></div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="nc-section" id="what" data-view="features_view" aria-labelledby="what-h">
+    <div class="wrap">
+      <div class="nc-head"><h2 id="what-h">What you get. <span class="nc-grey">One desk check of the houses around yours.</span></h2><p>A report you can read in a minute and show to your client.</p></div>
+      <div class="nc-cards">
+        <article class="nc-card">
+          <div class="nc-panel" aria-hidden="true">
+            <svg viewBox="0 0 220 160">
+              <rect x="0" y="66" width="220" height="28" fill="#f4ede0"/>
+              <g fill="#ffffff" stroke="#c9bda6" stroke-width="1.5">
+                <rect x="18" y="14" width="44" height="40" rx="4"/><rect x="88" y="14" width="44" height="40" rx="4"/><rect x="158" y="14" width="44" height="40" rx="4"/>
+                <rect x="18" y="106" width="44" height="40" rx="4"/><rect x="158" y="106" width="44" height="40" rx="4"/>
+              </g>
+              <rect x="88" y="106" width="44" height="40" rx="4" fill="#14171a"/>
+              <path d="M101 128l9-8 9 8v9h-18z" fill="#7fd1b5"/>
+              <g fill="#1d6b57"><circle cx="40" cy="34" r="5"/><circle cx="110" cy="34" r="5"/><circle cx="180" cy="34" r="5"/><circle cx="40" cy="126" r="5"/><circle cx="180" cy="126" r="5"/></g>
+              <g stroke="#1d6b57" stroke-width="1.5" stroke-dasharray="3 4" fill="none"><path d="M110 104V56M88 126H64M132 126h24M100 106 50 56M120 106l50-50"/></g>
+            </svg>
+          </div>
+          <h3>Neighbouring addresses</h3>
+          <p>The addresses around the property that matter for the purchase.</p>
+          <a class="nc-btn nc-btn--quiet" href="price.html" data-ev="feature_addresses">I need this</a>
+        </article>
+        <article class="nc-card">
+          <div class="nc-panel" aria-hidden="true">
+            <div class="nc-mini">
+              <div class="nc-line"><i>✓</i><span><b>Public housing</b> register</span></div>
+              <div class="nc-line"><i>✓</i><span><b>Community</b> provider lists</span></div>
+              <div class="nc-line"><i>✓</i><span><b>Other</b> open sources</span></div>
+            </div>
+          </div>
+          <h3>Desk check</h3>
+          <p>Each address checked against public records available online.</p>
+          <a class="nc-btn nc-btn--quiet" href="price.html" data-ev="feature_check">I need this</a>
+        </article>
+        <article class="nc-card">
+          <div class="nc-panel" aria-hidden="true">
+            <div class="nc-mini"><div class="nc-legend">
+              <span class="nc-chip nc-chip--public">Public</span>
+              <span class="nc-chip nc-chip--community">Community</span>
+              <span class="nc-chip nc-chip--private">Private</span>
+              <span class="nc-chip nc-chip--unknown">Unknown</span>
+            </div></div>
+          </div>
+          <h3>Report with sources</h3>
+          <p>Public, community, private or unknown for each address, with the source.</p>
+          <a class="nc-btn nc-btn--quiet" href="price.html" data-ev="feature_report">I need this</a>
+        </article>
+        <article class="nc-card">
+          <div class="nc-panel" aria-hidden="true">
+            <svg viewBox="0 0 220 120">
+              <path d="M24 60h172" stroke="#c9bda6" stroke-width="2"/>
+              <path d="M24 60h86" stroke="#1d6b57" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="24" cy="60" r="9" fill="#1d6b57"/><circle cx="110" cy="60" r="9" fill="#1d6b57"/><circle cx="196" cy="60" r="9" fill="#ffffff" stroke="#14171a" stroke-width="2"/>
+              <path d="M20 60l3 3 5-6M106 60l3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <g font-family="Funnel Sans, system-ui, sans-serif" font-size="12" fill="#3d4247" text-anchor="middle"><text x="24" y="92">Order</text><text x="110" y="92">Report</text><text x="196" y="92">Offer</text></g>
+            </svg>
+          </div>
+          <h3>Before your offer</h3>
+          <p>Results usually within 24 hours.</p>
+          <a class="nc-btn nc-btn--quiet" href="price.html" data-ev="feature_fast">I need this</a>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your package</a>
+  <section class="nc-section nc-example" id="example" data-view="example_view" aria-labelledby="example-h">
+    <div class="wrap"><div class="grid12">
+      <div class="nc-ex-text">
+        <h2 id="example-h">An example, with fictional data</h2>
+        <p class="nc-fine">Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
+        <div class="nc-timeline"><span><b>Thursday</b>Check ordered</span><span><b>Friday</b>Report arrives</span><span><b>Saturday</b>Auction</span></div>
+        <a class="nc-btn" href="price.html" data-ev="click_cta_after_example">Choose your package<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M5.5 2.5 9 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="nc-doc-frame" role="img" aria-label="The fictional report: eight neighbouring addresses, six private, one community housing, one unknown">
+        <div class="nc-doc" aria-hidden="true">
+          <div class="nc-doc__top"><div><b>Neighbour report</b><small>Fictional data · Melbourne suburb</small></div><span class="nc-chip nc-chip--private">Ready</span></div>
+          <div class="nc-doc__sum"><span><b>6</b>private</span><span><b>1</b>community</span><span><b>1</b>unknown</span></div>
+          <div class="nc-row"><div><b>Left side</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+          <div class="nc-row"><div><b>Right side</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+          <div class="nc-row"><div><b>Across the street</b><small>Provider list, link to the record</small></div><span class="nc-chip nc-chip--community">Community</span></div>
+          <div class="nc-row"><div><b>Behind the back fence</b><small>No clear record</small></div><span class="nc-chip nc-chip--unknown">Unknown</span></div>
+          <div class="nc-row"><div><b>Two doors down</b><small>Land title record</small></div><span class="nc-chip nc-chip--private">Private</span></div>
+          <p class="nc-doc__foot">Desk check of public records about ownership type.</p>
+        </div>
+      </div>
+    </div></div>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
+  <section class="nc-section nc-read" id="opis" aria-labelledby="opis-h">
+    <div class="wrap"><div class="grid12">
+      <div class="nc-read__head"><h2 id="opis-h">How it works</h2></div>
+      <div class="nc-read__body">
     <p>When you buy a home, the house itself is only part of the decision. Who lives next door, and whether the neighbouring houses are privately owned or held by a public or community housing provider, matters to many buyers. That information is rarely in the listing, and agents for the seller may not know it. Neighbour Check does a desk check of the addresses around a property before you make an offer.</p>
     <p>You give us the address of the property you are considering and, if you like, which neighbouring addresses matter most to you — the houses on both sides, across the street, behind the back fence. If you do not choose, we select the addresses that are closest to the property.</p>
     <p>Each address is checked against public records available online: registers and published lists of public and community housing, and other open sources. The check is done by a person, not only by an automatic match, so that unusual cases are looked at properly.</p>
@@ -114,29 +232,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Neighbour Check is for private buyers and buyer's agents in Australia. Results depend on what public records show; records can be incomplete or out of date.</p>
     <p>If you are looking at several properties at once, you can order a check for each of them and compare the reports side by side. When a purchase falls through and you return to the market, a new check can be ordered for the next shortlisted address in the same way, and earlier reports stay available in your email.</p>
     <p>Neighbour Check is not a government agency and does not give legal or financial advice. Your decision to buy remains yours.</p>
+      </div>
+    </div></div>
   </section>
-  <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Home buyers and buyer's agents in Australia.</p>
-    <h3>How fast is the report?</h3>
-    <p>Usually within 24 hours.</p>
-    <h3>What does the report show?</h3>
-    <p>Public, community, private or unknown for each neighbouring address, with the source.</p>
-    <h3>Is this an inspection?</h3>
-    <p>No. It is a desk check of public records about ownership type.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p>
+  <section class="nc-section nc-read nc-faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap"><div class="grid12">
+      <div class="nc-read__head"><h2 id="faq-h">Questions</h2></div>
+      <div class="nc-read__body">
+        <div class="nc-qa"><h3>Who is it for?</h3>
+    <p>Home buyers and buyer's agents in Australia.</p></div>
+        <div class="nc-qa"><h3>How fast is the report?</h3>
+    <p>Usually within 24 hours.</p></div>
+        <div class="nc-qa"><h3>What does the report show?</h3>
+    <p>Public, community, private or unknown for each neighbouring address, with the source.</p></div>
+        <div class="nc-qa"><h3>Is this an inspection?</h3>
+    <p>No. It is a desk check of public records about ownership type.</p></div>
+        <div class="nc-qa"><h3>Can I use it already?</h3>
+    <p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p></div>
+      </div>
+    </div></div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Order a check</h2>
-    <p><label>You are<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Order a check</a>
+  <section class="nc-start" id="start" data-view="start_view" aria-labelledby="start-h">
+    <div class="wrap"><div class="grid12">
+      <h2 id="start-h">Order a check before your offer</h2>
+      <p class="nc-start__lead">Tell us who you are buying for, then choose a single check or a monthly package.</p>
+      <div class="nc-start__form">
+        <label>You are<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></label>
+        <a class="nc-btn nc-btn--light" href="price.html" data-ev="form_submit_click">Order a check<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h8M5.5 2.5 9 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="nc-start__note">Service in preparation · No payment is accepted on this page</p>
+      </div>
+    </div></div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer class="nc-footer"><div class="wrap">
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
   <p class="muted">Not a government agency and no legal or financial advice. Results depend on public records, which can be incomplete.</p>
 </div></footer>
