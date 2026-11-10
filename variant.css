@@ -3,15 +3,19 @@
    2. page CSS inside the visuals (the kit's references allow it there);
    3. the least needed to undo the shared base stylesheet (style.css) where it clashes with the system. */
 
-/* 1. theme (start.mjs css --page software --palette mint-pink-accounts --type outfit --radius soft) */
+/* 1. theme (start.mjs css --page software --radius soft), the values set to the smokes' house palette and
+   one font, Inter (rule СМ-04, brief 4: the same colours and font on every variant, light everywhere):
+   the inverse side and the lit ground are light too, so no block on the page is dark or tinted */
 :root {
-  --p-bg: #f8f8f8; --p-surface: #eeeeee; --p-ink: #0a0a0a; --p-muted: #6a6a6a;
-  --p-accent: #1f6b3a; --p-accent-ink: #ffffff; --p-action: #1f6b3a; --p-action-ink: #ffffff;
-  --p-inv-bg: #0a0a0a; --p-inv-surface: #171717; --p-inv-ink: #f8f8f8; --p-inv-muted: #939393;
-  --p-inv-accent: #1f6b3a; --p-inv-accent-ink: #ffffff; --p-inv-action: #1f6b3a; --p-inv-action-ink: #ffffff;
-  --font-display: "Outfit", system-ui, sans-serif;
-  --font-text: "Outfit", system-ui, sans-serif;
-  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --p-bg: #fcfcfc; --p-surface: #f7f8f9; --p-ink: #05080b; --p-muted: #5c646f;
+  --p-accent: #006acf; --p-accent-ink: #ffffff; --p-action: #006acf; --p-action-ink: #ffffff;
+  --p-inv-bg: #f7f8f9; --p-inv-surface: #ffffff; --p-inv-ink: #05080b; --p-inv-muted: #5c646f;
+  --p-inv-accent: #006acf; --p-inv-accent-ink: #ffffff; --p-inv-action: #006acf; --p-inv-action-ink: #ffffff;
+  --ground-bg: #f7f8f9; --ground-surface: #ffffff; --ground-ink: #05080b; --ground-muted: #5c646f; --ground-accent: #006acf;
+  --card: #ffffff; --line: #dfe1e5;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-text: "Inter", system-ui, sans-serif;
+  --font-mono: "Inter", system-ui, sans-serif;
   --display-weight: 400;
   --display-tracking: -0.03em;
   --display-tracking-xl: -0.04em;
@@ -32,10 +36,13 @@
 .ui-check.is-done .ui-check__label::after { transform: scaleX(0); }
 /* the four results of a report */
 .ui-win__st[data-kind] { box-shadow: none; }
-.ui-win__st[data-kind="private"] { color: #17673f; background: #e7f4ec; }
-.ui-win__st[data-kind="community"] { color: #8a5300; background: #fdf0dc; }
-.ui-win__st[data-kind="public"] { color: #1f5f99; background: #e2eef9; }
-.ui-win__st[data-kind="unknown"] { color: #50565c; background: #eceae4; }
+.ui-win__st[data-kind="private"] { color: #1a7f37; background: #dafbe1; }
+.ui-win__st[data-kind="community"] { color: #9a6700; background: #fff8c5; }
+.ui-win__st[data-kind="public"] { color: #05080b; background: #d6efff; }
+.ui-win__st[data-kind="unknown"] { color: #5c646f; background: #f7f8f9; }
+/* the drawn avatars: the palette's soft accent instead of the kit's five hues; the focus ring in its own blue */
+.ui-avatar[data-tone] { background: #d6efff; color: #05080b; }
+:focus-visible { outline-color: #0086dd; }
 
 /* 3. the shared base stylesheet, undone where it clashes */
 .wrap { max-width: none; }
@@ -46,5 +53,5 @@ header .nav__bar { flex-wrap: nowrap; justify-content: flex-start; gap: var(--s-
 .btn { margin-top: 0; }
 .card span { color: inherit; font-size: inherit; line-height: inherit; }
 footer a { color: inherit; }
-footer .muted { margin: 0; }
+footer .muted { margin: 0; color: var(--muted); }
 footer .closing__cta { padding: 0; }
