@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-type="software" data-radius="soft" data-ground="sand" data-buttons="arrow" data-motion>
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <!-- Google Tag Manager -->
@@ -15,18 +15,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For home buyers and buyer&#x27;s agents in Australia: the addresses next to a property checked against public housing registers, before an offer.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="taste/system.css">
-<link rel="stylesheet" href="taste/ui/cards.css">
-<link rel="stylesheet" href="taste/motion/motion.css">
-<link rel="stylesheet" href="taste/layout/layout.css">
-<link rel="stylesheet" href="taste/ui/base.css">
-<link rel="stylesheet" href="taste/ui/window/fragment.css">
-<link rel="stylesheet" href="taste/ui/checklist/fragment.css">
-<link rel="stylesheet" href="taste/ui/doc/fragment.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
-<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -84,263 +72,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMKB9MPH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- Taste Skill 2.5, built on its own files in taste/ (copied unchanged).
-     type: software. deal: hero collage, nav nav-cards (plain words), close close-word, footer footer-dark,
-     rhythm surface-pairs, buttons arrow, mark dots, ground sand.
-     palette: the smokes' house colours, font Inter, light everywhere (brief 4; :root in variant.css). -->
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <symbol id="nc-house" viewBox="0 0 16 16"><path d="M2.5 7.6 8 3l5.5 4.6V13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><path d="M6.5 13.5V10h3v3.5"/></symbol>
-</svg>
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Neighbour Check</a></div>
+  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+</div></header>
 
-<header class="nav">
-  <div class="wrap nav__bar">
-    <a class="nav__logo" href="index.html" data-ev="click_logo_home"><span class="mark" data-mark="dots" aria-hidden="true"></span>Neighbour Check</a>
-    <nav class="nav__links" aria-label="Main">
-      <div class="nav__item"><a class="nav__link" href="#what" data-ev="click_nav_what">What you get</a></div>
-      <div class="nav__item"><a class="nav__link" href="price.html" data-ev="click_nav_price">Price</a></div>
-      <div class="nav__item"><a class="nav__link" href="#example" data-ev="click_nav_example">Example</a></div>
-    </nav>
-    <div class="nav__actions">
-      <a class="btn btn--primary" href="#start" data-ev="click_nav_start">Start</a>
-    </div>
+<div class="wrap">
+  <div class="hero">
+    <h1>Know who owns the houses next door before you make an offer</h1>
+    <p class="sub">For home buyers and buyer's agents in Australia: give us the address, and we check the neighbouring addresses against public records and send a report — public, community, private or unknown for each, with the source.</p>
+    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
+    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
   </div>
-</header>
 
-<main id="top">
-  <section class="hero hero--collage" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text grid hero__grid">
-      <div class="hero__text span-5">
-        <h1 id="hero-h">Know who owns the houses next door before you make an offer</h1>
-        <p class="hero__lead">For home buyers and buyer's agents in Australia: give us the address, and we check the neighbouring addresses against public records. The report says public, community, private or unknown for each, with the source.</p>
-        <div class="btn-row"><a class="btn btn--primary" href="price.html" data-ev="cta_click">I need this check</a></div>
-        <p class="hero__proof">Service in preparation · No payment is accepted on this page</p>
-      </div>
-      <div class="hero__art span-6 start-7" role="img" aria-label="A Neighbour Check report: the addresses around a house, each marked private, community or unknown with its source">
-        <div class="ly-piece ly-piece--main ui ui-panel ui-win" aria-hidden="true">
-          <div class="ui-win__bar">
-            <span class="ui-dots"><i></i><i></i><i></i></span>
-            <span class="ui-win__crumb">Neighbour Check <i>/</i> <b>Wattle Street, Brunswick</b></span>
-          </div>
-          <div class="ui-win__body">
-            <nav class="ui-win__side">
-              <span class="ui-win__nav is-on"><svg class="ui-icon"><use href="#nc-house"/></svg>Neighbours<em>7</em></span>
-              <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M4 2.5h5l3 3v8H4z"/><path d="M9 2.5v3h3"/></svg>Sources</span>
-              <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg>Send to client</span>
-              <span class="ui-win__label">Shortlist</span>
-              <span class="ui-win__nav"><span class="ui-win__hash">#</span>Wattle Street</span>
-              <span class="ui-win__nav"><span class="ui-win__hash">#</span>Banksia Lane</span>
-            </nav>
-            <div class="ui-win__main">
-              <ul class="ui-win__rows">
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Left side, Wattle Street</span><span class="ui-win__sub">Land title record</span><span class="ui-win__st" data-kind="private">Private</span></li>
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Right side, Wattle Street</span><span class="ui-win__sub">Land title record</span><span class="ui-win__st" data-kind="private">Private</span></li>
-                <li class="ui-win__row is-sel"><span class="ui-avatar" data-tone="2"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Across the street</span><span class="ui-win__sub">Housing provider list</span><span class="ui-win__st" data-kind="community">Community</span></li>
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="5"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Behind the back fence</span><span class="ui-win__sub">No clear record</span><span class="ui-win__st" data-kind="unknown">Unknown</span></li>
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Two doors down</span><span class="ui-win__sub">Land title record</span><span class="ui-win__st" data-kind="private">Private</span></li>
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Across, to the left</span><span class="ui-win__sub">State housing register</span><span class="ui-win__st" data-kind="private">Private</span></li>
-                <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Across, to the right</span><span class="ui-win__sub">Land title record</span><span class="ui-win__st" data-kind="private">Private</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="ly-piece ly-piece--note ui ui-panel ui-checks" aria-hidden="true">
-          <div class="ui-checks__head"><div class="ui-title">Report for your client</div><span class="ui-spacer"></span><div class="ui-meta">Sent</div></div>
-          <div class="ui-checks__bar"><i style="--k:1"></i></div>
-          <ul class="ui-checks__list">
-            <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Neighbours checked by a person</span></li>
-            <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Every result with its source</span></li>
-            <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Sent by email, before the offer</span></li>
-          </ul>
-        </div>
-      </div>
-    </div></div>
-  </section>
-
-  <section class="section" id="what" data-view="features_view" aria-labelledby="what-h">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="what-h">What you get. <span class="muted">One desk check of the houses around yours.</span></h2>
-        <p>A report you can read in a minute and show to your client.</p>
-      </div>
-      <div class="grid">
-        <article class="card card--row card--open span-3">
-          <h3>Neighbouring addresses</h3>
-          <p>The addresses around the property that matter for the purchase.</p>
-          <a class="link" href="price.html" data-ev="feature_addresses">I need this</a>
-          <div class="panel" role="img" aria-label="A street plan: the property in the middle, the five houses around it marked">
-            <div class="stage"><div class="at-center" style="--w:220px">
-              <svg viewBox="0 0 220 160" aria-hidden="true">
-                <rect x="0" y="66" width="220" height="28" fill="#dfe1e5"/>
-                <g fill="#ffffff" stroke="#dfe1e5" stroke-width="1.5">
-                  <rect x="18" y="14" width="44" height="40" rx="4"/><rect x="88" y="14" width="44" height="40" rx="4"/><rect x="158" y="14" width="44" height="40" rx="4"/>
-                  <rect x="18" y="106" width="44" height="40" rx="4"/><rect x="158" y="106" width="44" height="40" rx="4"/>
-                </g>
-                <rect x="88" y="106" width="44" height="40" rx="4" fill="#05080b"/>
-                <path d="M101 128l9-8 9 8v9h-18z" fill="#ffffff"/>
-                <g fill="#006acf"><circle cx="40" cy="34" r="5"/><circle cx="110" cy="34" r="5"/><circle cx="180" cy="34" r="5"/><circle cx="40" cy="126" r="5"/><circle cx="180" cy="126" r="5"/></g>
-                <g stroke="#006acf" stroke-width="1.5" stroke-dasharray="3 4" fill="none"><path d="M110 104V56M88 126H64M132 126h24M100 106 50 56M120 106l50-50"/></g>
-              </svg>
-            </div></div>
-          </div>
-        </article>
-        <article class="card card--row card--open span-3">
-          <h3>Desk check</h3>
-          <p>Each address checked against public records available online.</p>
-          <a class="link" href="price.html" data-ev="feature_check">I need this</a>
-          <div class="panel" role="img" aria-label="The three kinds of public records each address is checked against">
-            <div class="stage"><div class="at-rise fit" style="--ax:16px;--ay:32px">
-              <div class="ui ui-panel ui-checks" aria-hidden="true">
-                <div class="ui-checks__head"><div class="ui-title">Records checked</div><span class="ui-spacer"></span><div class="ui-meta">3 of 3</div></div>
-                <div class="ui-checks__bar"><i style="--k:1"></i></div>
-                <ul class="ui-checks__list">
-                  <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Public housing register</span></li>
-                  <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Community provider lists</span></li>
-                  <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Other open sources</span></li>
-                </ul>
-              </div>
-            </div></div>
-          </div>
-        </article>
-        <article class="card card--row card--open span-3">
-          <h3>Report with sources</h3>
-          <p>Public, community, private or unknown for each address, with the source.</p>
-          <a class="link" href="price.html" data-ev="feature_report">I need this</a>
-          <div class="panel" role="img" aria-label="The four results a report can give: public, community, private, unknown">
-            <div class="stage"><div class="at-rise fit" style="--ax:16px;--ay:32px">
-              <div class="ui ui-panel ui-win ui-win--compact" aria-hidden="true">
-                <ul class="ui-win__rows">
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">State register</span><span class="ui-win__sub">Public housing</span><span class="ui-win__st" data-kind="public">Public</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="2"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Provider list</span><span class="ui-win__sub">Community housing</span><span class="ui-win__st" data-kind="community">Community</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="3"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">Land title</span><span class="ui-win__sub">Privately owned</span><span class="ui-win__st" data-kind="private">Private</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="5"><svg class="ui-icon"><use href="#nc-house"/></svg></span><span class="ui-win__who">No clear record</span><span class="ui-win__sub">Not enough to say</span><span class="ui-win__st" data-kind="unknown">Unknown</span></li>
-                </ul>
-              </div>
-            </div></div>
-          </div>
-        </article>
-        <article class="card card--row card--open span-3">
-          <h3>Before your offer</h3>
-          <p>Results usually within 24 hours.</p>
-          <a class="link" href="price.html" data-ev="feature_fast">I need this</a>
-          <div class="panel" role="img" aria-label="Three steps: order, report, offer">
-            <div class="stage"><div class="at-center" style="--w:220px">
-              <svg viewBox="0 0 220 120" aria-hidden="true">
-                <path d="M24 60h172" stroke="#dfe1e5" stroke-width="2"/>
-                <path d="M24 60h86" stroke="#006acf" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="24" cy="60" r="9" fill="#006acf"/><circle cx="110" cy="60" r="9" fill="#006acf"/><circle cx="196" cy="60" r="9" fill="#ffffff" stroke="#05080b" stroke-width="2"/>
-                <path d="M20 60l3 3 5-6M106 60l3 3 5-6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <g font-family="Inter, system-ui, sans-serif" font-size="13" fill="#05080b" text-anchor="middle"><text x="24" y="92">Order</text><text x="110" y="92">Report</text><text x="196" y="92">Offer</text></g>
-              </svg>
-            </div></div>
-          </div>
-        </article>
-      </div>
+  <section id="what" data-view="features_view">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><b>Neighbouring addresses</b><span>The addresses around the property that matter for the purchase.</span><br><a class="btn" href="price.html" data-ev="feature_addresses">I need this</a></div>
+      <div class="card"><b>Desk check</b><span>Each address checked against public records available online.</span><br><a class="btn" href="price.html" data-ev="feature_check">I need this</a></div>
+      <div class="card"><b>Report with sources</b><span>Public, community, private or unknown for each address, with the source.</span><br><a class="btn" href="price.html" data-ev="feature_report">I need this</a></div>
+      <div class="card"><b>Before your offer</b><span>Results usually within 24 hours.</span><br><a class="btn" href="price.html" data-ev="feature_fast">I need this</a></div>
     </div>
   </section>
 
-  <section class="section ground-surface" id="example" data-view="example_view" aria-labelledby="example-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="example-h">An example, with fictional data</h2></div>
-      <div class="grid">
-        <div class="span-5 stack-6">
-          <p class="t-lead">Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
-          <ul class="rows">
-            <li><span class="rows__name">Thursday</span><span class="rows__value">Check ordered</span></li>
-            <li><span class="rows__name">Friday</span><span class="rows__value">Report arrives</span></li>
-            <li><span class="rows__name">Saturday</span><span class="rows__value">Auction</span></li>
-          </ul>
-          <div class="btn-row"><a class="btn btn--primary" href="price.html" data-ev="click_cta_after_example">Choose your package</a></div>
-        </div>
-        <div class="panel span-6 start-7" role="img" aria-label="The fictional report: eight neighbouring addresses, six private, one community housing, one unknown">
-          <div class="stage"><div class="at-rise fit to-edge" style="--ax:32px;--ay:40px;--fit-max:460px">
-            <div class="ui ui-doc" aria-hidden="true">
-              <article class="ui-doc__page">
-                <div class="ui-doc__label">Neighbour report · Fictional data, Melbourne suburb</div>
-                <div class="ui-doc__title">8 neighbouring addresses: 6 private, 1 community, 1 unknown</div>
-                <div class="ui-doc__text">Left side and right side: private, land title record.</div>
-                <div class="ui-doc__text">Across the street: <mark class="ui-doc__mark is-on">community housing</mark>, provider list, link to the record.</div>
-                <div class="ui-doc__text">Behind the back fence: <mark class="ui-doc__mark is-seen">unknown</mark>, no clear record.</div>
-                <div class="ui-doc__text">Two doors down: private, land title record.</div>
-                <div class="ui-doc__text">Desk check of public records about ownership type.</div>
-              </article>
-              <aside class="ui-doc__note ui-panel is-on" style="top:96px">
-                <div class="ui-doc__kind"><span class="ui-doc__dot"></span><span>Community</span></div>
-                <div class="ui-doc__msg">Across the street</div>
-                <div class="ui-doc__where">Provider list, link to the record</div>
-              </aside>
-            </div>
-          </div></div>
-        </div>
-      </div>
-    </div>
+  <section id="example" data-view="example_view">
+    <h2>Example (fictional data)</h2>
+    <p class="fine">Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
+    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your package</a>
   </section>
 <!-- seo-tekst:start -->
-  <section class="section" id="opis" style="--h: 2" aria-labelledby="opis-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="opis-h">How it works</h2></div>
-      <div class="grid grid--top">
-        <div class="span-6 stack-4">
+  <section id="opis">
+    <h2>How it works</h2>
     <p>When you buy a home, the house itself is only part of the decision. Who lives next door, and whether the neighbouring houses are privately owned or held by a public or community housing provider, matters to many buyers. That information is rarely in the listing, and agents for the seller may not know it. Neighbour Check does a desk check of the addresses around a property before you make an offer.</p>
     <p>You give us the address of the property you are considering and, if you like, which neighbouring addresses matter most to you — the houses on both sides, across the street, behind the back fence. If you do not choose, we select the addresses that are closest to the property.</p>
     <p>Each address is checked against public records available online: registers and published lists of public and community housing, and other open sources. The check is done by a person, not only by an automatic match, so that unusual cases are looked at properly.</p>
     <p>The report lists each address with one of four results: public housing, community housing, private, or unknown when the records do not allow a clear answer. Every result has its source, so you can see where it comes from. The report is sent by email, usually within 24 hours.</p>
     <p>Buyer's agents who check several properties a month can choose a monthly package and order checks for each shortlisted property, with reports branded for their clients.</p>
-        </div>
-        <div class="span-6 start-7 stack-4">
     <p>There is no login and no account to create for a single check: you enter the address, pay and receive the report by email.</p>
     <p>A desk check is not an inspection. It does not tell you about the people living at an address, about noise or behaviour, or about future sales of neighbouring houses. It tells you what public records show about ownership type at the time of the check.</p>
     <p>Neighbour Check is for private buyers and buyer's agents in Australia. Results depend on what public records show; records can be incomplete or out of date.</p>
     <p>If you are looking at several properties at once, you can order a check for each of them and compare the reports side by side. When a purchase falls through and you return to the market, a new check can be ordered for the next shortlisted address in the same way, and earlier reports stay available in your email.</p>
     <p>Neighbour Check is not a government agency and does not give legal or financial advice. Your decision to buy remains yours.</p>
-        </div>
-      </div>
-    </div>
   </section>
-  <section class="section" id="faq" aria-labelledby="faq-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="faq-h">Questions</h2></div>
-      <div class="grid grid--top">
-        <div class="faq span-6">
-          <div class="faq__item"><h3>Who is it for?</h3>
-    <p>Home buyers and buyer's agents in Australia.</p></div>
-          <div class="faq__item"><h3>How fast is the report?</h3>
-    <p>Usually within 24 hours.</p></div>
-          <div class="faq__item"><h3>What does the report show?</h3>
-    <p>Public, community, private or unknown for each neighbouring address, with the source.</p></div>
-        </div>
-        <div class="faq span-6 start-7">
-          <div class="faq__item"><h3>Is this an inspection?</h3>
-    <p>No. It is a desk check of public records about ownership type.</p></div>
-          <div class="faq__item"><h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p></div>
-        </div>
-      </div>
-    </div>
+  <section id="faq">
+    <h2>Questions</h2>
+    <h3>Who is it for?</h3>
+    <p>Home buyers and buyer's agents in Australia.</p>
+    <h3>How fast is the report?</h3>
+    <p>Usually within 24 hours.</p>
+    <h3>What does the report show?</h3>
+    <p>Public, community, private or unknown for each neighbouring address, with the source.</p>
+    <h3>Is this an inspection?</h3>
+    <p>No. It is a desk check of public records about ownership type.</p>
+    <h3>Can I use it already?</h3>
+    <p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p>
   </section>
 <!-- seo-tekst:end -->
-</main>
+  <section id="start" data-view="start_view">
+    <h2>Order a check</h2>
+    <p><label>You are<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></label></p>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Order a check</a>
+  </section>
+</div>
 
-<footer class="footer closing footer--dark ground-surface">
-  <div class="wrap">
-    <section class="closing__cta close--word" id="start" data-view="start_view" aria-labelledby="start-h">
-      <div class="section-head--split">
-        <div><h2 id="start-h">Order a check before your offer</h2><p class="t-lead">Tell us who you are buying for, then choose a single check or a monthly package.</p></div>
-        <div class="stack-4">
-          <div class="field"><label for="you">You are</label><select id="you" data-ev-focus="form_start"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></div>
-          <div class="btn-row"><a class="btn btn--primary" href="price.html" data-ev="form_submit_click">Order a check</a></div>
-          <p class="t-small muted">Service in preparation · No payment is accepted on this page</p>
-        </div>
-      </div>
-      <p class="close__word" aria-hidden="true">Neighbour</p>
-    </section>
-    <div class="closing__links">
-      <div class="footer__legal">
-        <span><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></span>
-        <p class="muted">Not a government agency and no legal or financial advice. Results depend on public records, which can be incomplete.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="muted">Not a government agency and no legal or financial advice. Results depend on public records, which can be incomplete.</p>
+</div></footer>
+
 </body>
 </html>
