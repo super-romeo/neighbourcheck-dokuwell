@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For home buyers and buyer&#x27;s agents in Australia: the addresses next to a property checked against public housing registers, before an offer.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,72 +77,208 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Neighbour Check</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Neighbour Check</a>
+  <nav aria-label="Sections"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Know who owns the houses next door before you make an offer</h1>
-    <p class="sub">For home buyers and buyer's agents in Australia: give us the address, and we check the neighbouring addresses against public records and send a report — public, community, private or unknown for each, with the source.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For home buyers and buyer's agents in Australia</p>
+      <h1 class="rise" style="--i:1">Know who owns the houses next door <span class="soft">before you make an offer</span></h1>
+      <p class="rise" style="--i:2">Give us the address, and we check the neighbouring addresses against public records and send a report — public, community, private or unknown for each, with the source.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+
+    <figure class="window rise" style="--i:2"><svg class="shot" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" font-family="IBM Plex Sans, Segoe UI, system-ui, sans-serif">
+      <rect width="1200" height="800" fill="#ffffff"/>
+      <text x="80" y="112" font-size="46" font-weight="600" fill="#0a1524">Report</text>
+      <text x="80" y="166" font-size="32" fill="#566174">Neighbouring addresses</text>
+      <rect x="80" y="216" width="400" height="504" rx="20" fill="#eef2f7"/>
+      <rect x="80" y="438" width="400" height="60" fill="#ffffff"/>
+      <rect x="108" y="318" width="100" height="100" rx="10" fill="#dfe8f7" stroke="#12397a" stroke-width="3"/>
+      <rect x="230" y="318" width="100" height="100" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <rect x="352" y="318" width="100" height="100" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <rect x="108" y="518" width="100" height="100" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <rect x="230" y="518" width="100" height="100" rx="10" fill="#12397a"/>
+      <path d="M256 574l24-22 24 22v20h-48z" fill="#ffffff"/>
+      <rect x="352" y="518" width="100" height="100" rx="10" fill="#ffffff" stroke="#566174" stroke-width="3" stroke-dasharray="10 8"/>
+      <rect x="230" y="638" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <rect x="230" y="238" width="100" height="60" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <g fill="#dde2ea">
+        <rect x="540" y="240" width="250" height="18" rx="9"/><rect x="540" y="340" width="210" height="18" rx="9"/>
+        <rect x="540" y="440" width="270" height="18" rx="9"/><rect x="540" y="540" width="230" height="18" rx="9"/>
+        <rect x="540" y="640" width="250" height="18" rx="9"/>
+      </g>
+      <g fill="#12397a">
+        <rect x="540" y="276" width="120" height="6" rx="3"/><rect x="540" y="376" width="120" height="6" rx="3"/>
+        <rect x="540" y="476" width="120" height="6" rx="3"/><rect x="540" y="576" width="120" height="6" rx="3"/>
+      </g>
+      <g stroke="#dde2ea" stroke-width="2">
+        <path d="M540 310h580M540 410h580M540 510h580M540 610h580"/>
+      </g>
+      <g font-size="32" font-weight="500" text-anchor="middle">
+        <rect x="880" y="226" width="240" height="60" rx="30" fill="#eef2f7"/><text x="1000" y="267" fill="#566174">Private</text>
+        <rect x="880" y="326" width="240" height="60" rx="30" fill="#dfe8f7"/><text x="1000" y="367" fill="#12397a">Community</text>
+        <rect x="880" y="426" width="240" height="60" rx="30" fill="#eef2f7"/><text x="1000" y="467" fill="#566174">Private</text>
+        <rect x="880" y="526" width="240" height="60" rx="30" fill="#12397a"/><text x="1000" y="567" fill="#ffffff">Public</text>
+        <rect x="881" y="627" width="238" height="58" rx="29" fill="#ffffff" stroke="#566174" stroke-width="2" stroke-dasharray="10 8"/><text x="1000" y="667" fill="#566174">Unknown</text>
+      </g>
+    </svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Home buyers and buyer's agents</dd></div>
+      <div><dt>Checks</dt><dd>Neighbouring addresses, public records</dd></div>
+      <div><dt>Report</dt><dd>Each result with its source</dd></div>
+      <div><dt>Ready</dt><dd>Usually within 24 hours</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Neighbouring addresses</b><span>The addresses around the property that matter for the purchase.</span><br><a class="btn" href="price.html" data-ev="feature_addresses">I need this</a></div>
-      <div class="card"><b>Desk check</b><span>Each address checked against public records available online.</span><br><a class="btn" href="price.html" data-ev="feature_check">I need this</a></div>
-      <div class="card"><b>Report with sources</b><span>Public, community, private or unknown for each address, with the source.</span><br><a class="btn" href="price.html" data-ev="feature_report">I need this</a></div>
-      <div class="card"><b>Before your offer</b><span>Results usually within 24 hours.</span><br><a class="btn" href="price.html" data-ev="feature_fast">I need this</a></div>
+    <div class="split">
+      <div class="stack"><h2>What you get</h2></div>
+      <p>A desk check of the addresses around a property before you make an offer.</p>
+    </div>
+    <div class="bento">
+      <article class="tile stack wide reveal">
+        <div class="art"><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="800" height="600" fill="#eef2f7"/>
+          <rect y="262" width="800" height="76" fill="#ffffff"/>
+          <rect x="90" y="90" width="150" height="150" rx="14" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+          <rect x="325" y="90" width="150" height="150" rx="14" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+          <rect x="560" y="90" width="150" height="150" rx="14" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+          <rect x="90" y="360" width="150" height="150" rx="14" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+          <rect x="325" y="360" width="150" height="150" rx="14" fill="#12397a"/>
+          <path d="M360 446l40-38 40 38v34h-80z" fill="#ffffff"/>
+          <rect x="560" y="360" width="150" height="150" rx="14" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+        </svg></div>
+        <h3>Neighbouring addresses</h3><p>The addresses around the property that matter for the purchase.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_addresses">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="800" height="600" fill="#eef2f7"/>
+          <rect x="130" y="80" width="420" height="440" rx="20" fill="#ffffff" stroke="#dde2ea" stroke-width="5"/>
+          <g fill="#dde2ea"><rect x="180" y="150" width="320" height="26" rx="13"/><rect x="180" y="230" width="260" height="26" rx="13"/><rect x="180" y="310" width="300" height="26" rx="13"/><rect x="180" y="390" width="220" height="26" rx="13"/></g>
+          <circle cx="520" cy="360" r="110" fill="#dfe8f7" stroke="#12397a" stroke-width="18"/>
+          <path d="M600 440l90 90" stroke="#12397a" stroke-width="30" stroke-linecap="round"/>
+          <path d="M472 362l34 34 62-70" fill="none" stroke="#12397a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Desk check</h3><p>Each address checked against public records available online.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_check">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="800" height="600" fill="#eef2f7"/>
+          <rect x="170" y="60" width="460" height="480" rx="20" fill="#ffffff" stroke="#dde2ea" stroke-width="5"/>
+          <g fill="#dde2ea"><rect x="220" y="134" width="170" height="24" rx="12"/><rect x="220" y="234" width="150" height="24" rx="12"/><rect x="220" y="334" width="180" height="24" rx="12"/><rect x="220" y="434" width="160" height="24" rx="12"/></g>
+          <g fill="#12397a"><rect x="220" y="174" width="90" height="8" rx="4"/><rect x="220" y="274" width="90" height="8" rx="4"/><rect x="220" y="374" width="90" height="8" rx="4"/></g>
+          <rect x="440" y="120" width="140" height="56" rx="28" fill="#12397a"/>
+          <rect x="440" y="220" width="140" height="56" rx="28" fill="#dfe8f7" stroke="#12397a" stroke-width="5"/>
+          <rect x="440" y="320" width="140" height="56" rx="28" fill="#eef2f7" stroke="#566174" stroke-width="5"/>
+          <rect x="440" y="420" width="140" height="56" rx="28" fill="#ffffff" stroke="#566174" stroke-width="5" stroke-dasharray="14 10"/>
+        </svg></div>
+        <h3>Report with sources</h3><p>Public, community, private or unknown for each address, with the source.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_report">I need this</a>
+      </article>
+      <article class="tile stack wide reveal">
+        <div class="art"><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="800" height="600" fill="#eef2f7"/>
+          <circle cx="250" cy="300" r="150" fill="#ffffff" stroke="#12397a" stroke-width="18"/>
+          <path d="M250 200v100l70 44" fill="none" stroke="#12397a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M440 300h90M500 264l36 36-36 36" fill="none" stroke="#566174" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="580" y="190" width="160" height="220" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="5"/>
+          <g fill="#dde2ea"><rect x="610" y="230" width="100" height="18" rx="9"/><rect x="610" y="274" width="76" height="18" rx="9"/></g>
+          <path d="M620 348l24 24 46-52" fill="none" stroke="#12397a" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Before your offer</h3><p>Results usually within 24 hours.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_fast">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your package</a>
+  <section id="example" class="split flip" data-view="example_view">
+    <div class="stack">
+      <p class="meta">Buyer's agent · Melbourne suburb</p>
+      <h2>Example (fictional data)</h2>
+      <p>Buyer's agent shortlisting a house in a Melbourne suburb before an auction on Saturday. Thursday morning she orders a check: 8 neighbouring addresses. Friday morning the report shows 6 private, 1 community housing with a link to the record, 1 unknown. She discusses it with her client before the auction.</p>
+      <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your package</a>
+    </div>
+    <svg class="shot reveal" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" font-family="IBM Plex Sans, Segoe UI, system-ui, sans-serif">
+      <rect width="1200" height="800" fill="#eef2f7"/>
+      <path d="M200 150h800" stroke="#dde2ea" stroke-width="6"/>
+      <circle cx="200" cy="150" r="18" fill="#ffffff" stroke="#12397a" stroke-width="6"/>
+      <circle cx="600" cy="150" r="18" fill="#12397a"/>
+      <circle cx="1000" cy="150" r="18" fill="#ffffff" stroke="#12397a" stroke-width="6"/>
+      <g font-size="38" text-anchor="middle">
+        <text x="200" y="226" font-weight="600" fill="#0a1524">Thursday</text><text x="200" y="274" fill="#566174">check ordered</text>
+        <text x="600" y="226" font-weight="600" fill="#0a1524">Friday</text><text x="600" y="274" fill="#566174">report</text>
+        <text x="1000" y="226" font-weight="600" fill="#0a1524">Saturday</text><text x="1000" y="274" fill="#566174">auction</text>
+      </g>
+      <rect x="120" y="340" width="960" height="380" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3"/>
+      <g stroke-width="4">
+        <rect x="180" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="288" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="396" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="504" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="612" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="720" y="400" width="84" height="84" rx="10" fill="#eef2f7" stroke="#566174"/>
+        <rect x="828" y="400" width="84" height="84" rx="10" fill="#dfe8f7" stroke="#12397a"/>
+        <rect x="936" y="400" width="84" height="84" rx="10" fill="#ffffff" stroke="#566174" stroke-dasharray="10 8"/>
+      </g>
+      <path d="M180 520h624M828 520h84M936 520h84" stroke="#dde2ea" stroke-width="4"/>
+      <g font-size="38">
+        <text x="180" y="590" fill="#566174">6 private</text>
+        <text x="180" y="660" fill="#12397a" font-weight="600">1 community housing</text>
+        <text x="820" y="660" fill="#566174">1 unknown</text>
+        <path d="M180 674h366" stroke="#12397a" stroke-width="3"/>
+      </g>
+    </svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>When you buy a home, the house itself is only part of the decision. Who lives next door, and whether the neighbouring houses are privately owned or held by a public or community housing provider, matters to many buyers. That information is rarely in the listing, and agents for the seller may not know it. Neighbour Check does a desk check of the addresses around a property before you make an offer.</p>
-    <p>You give us the address of the property you are considering and, if you like, which neighbouring addresses matter most to you — the houses on both sides, across the street, behind the back fence. If you do not choose, we select the addresses that are closest to the property.</p>
-    <p>Each address is checked against public records available online: registers and published lists of public and community housing, and other open sources. The check is done by a person, not only by an automatic match, so that unusual cases are looked at properly.</p>
-    <p>The report lists each address with one of four results: public housing, community housing, private, or unknown when the records do not allow a clear answer. Every result has its source, so you can see where it comes from. The report is sent by email, usually within 24 hours.</p>
-    <p>Buyer's agents who check several properties a month can choose a monthly package and order checks for each shortlisted property, with reports branded for their clients.</p>
-    <p>There is no login and no account to create for a single check: you enter the address, pay and receive the report by email.</p>
-    <p>A desk check is not an inspection. It does not tell you about the people living at an address, about noise or behaviour, or about future sales of neighbouring houses. It tells you what public records show about ownership type at the time of the check.</p>
-    <p>Neighbour Check is for private buyers and buyer's agents in Australia. Results depend on what public records show; records can be incomplete or out of date.</p>
-    <p>If you are looking at several properties at once, you can order a check for each of them and compare the reports side by side. When a purchase falls through and you return to the market, a new check can be ordered for the next shortlisted address in the same way, and earlier reports stay available in your email.</p>
-    <p>Neighbour Check is not a government agency and does not give legal or financial advice. Your decision to buy remains yours.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>When you buy a home, the house itself is only part of the decision. Who lives next door, and whether the neighbouring houses are privately owned or held by a public or community housing provider, matters to many buyers. That information is rarely in the listing, and agents for the seller may not know it. Neighbour Check does a desk check of the addresses around a property before you make an offer.</p>
+      <p>You give us the address of the property you are considering and, if you like, which neighbouring addresses matter most to you — the houses on both sides, across the street, behind the back fence. If you do not choose, we select the addresses that are closest to the property.</p>
+      <p>Each address is checked against public records available online: registers and published lists of public and community housing, and other open sources. The check is done by a person, not only by an automatic match, so that unusual cases are looked at properly.</p>
+      <p>The report lists each address with one of four results: public housing, community housing, private, or unknown when the records do not allow a clear answer. Every result has its source, so you can see where it comes from. The report is sent by email, usually within 24 hours.</p>
+      <p>Buyer's agents who check several properties a month can choose a monthly package and order checks for each shortlisted property, with reports branded for their clients.</p>
+      <p>There is no login and no account to create for a single check: you enter the address, pay and receive the report by email.</p>
+      <p>A desk check is not an inspection. It does not tell you about the people living at an address, about noise or behaviour, or about future sales of neighbouring houses. It tells you what public records show about ownership type at the time of the check.</p>
+      <p>Neighbour Check is for private buyers and buyer's agents in Australia. Results depend on what public records show; records can be incomplete or out of date.</p>
+      <p>If you are looking at several properties at once, you can order a check for each of them and compare the reports side by side. When a purchase falls through and you return to the market, a new check can be ordered for the next shortlisted address in the same way, and earlier reports stay available in your email.</p>
+      <p>Neighbour Check is not a government agency and does not give legal or financial advice. Your decision to buy remains yours.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Home buyers and buyer's agents in Australia.</p>
-    <h3>How fast is the report?</h3>
-    <p>Usually within 24 hours.</p>
-    <h3>What does the report show?</h3>
-    <p>Public, community, private or unknown for each neighbouring address, with the source.</p>
-    <h3>Is this an inspection?</h3>
-    <p>No. It is a desk check of public records about ownership type.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>Home buyers and buyer's agents in Australia.</p></div>
+      <div class="split flip"><h3>How fast is the report?</h3><p>Usually within 24 hours.</p></div>
+      <div class="split flip"><h3>What does the report show?</h3><p>Public, community, private or unknown for each neighbouring address, with the source.</p></div>
+      <div class="split flip"><h3>Is this an inspection?</h3><p>No. It is a desk check of public records about ownership type.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether buyers need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Order a check</h2>
-    <p><label>You are<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Order a check</a>
+  <section id="start" class="split" data-view="start_view">
+    <div class="stack">
+      <h2>Order a check</h2>
+      <p>There is no login and no account to create for a single check.</p>
+    </div>
+    <div class="tile stack">
+      <label>You are<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Buying a home for myself</option><option>A buyer's agent</option><option>An investor</option><option>Other</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Order a check</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Neighbour Check</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Not a government agency and no legal or financial advice. Results depend on public records, which can be incomplete.</p>
+  <p>Not a government agency and no legal or financial advice. Results depend on public records, which can be incomplete.</p>
 </div></footer>
 
 </body>
